@@ -1,0 +1,115 @@
+.section__items{
+    width: 95%;
+    margin: 0 3em;
+}
+
+.items__h2{
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 2em;
+}
+.items__ul{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    overflow-x: auto;
+    gap: 2em;
+    margin:0;
+}
+
+.items__li{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.items__img{
+    height: 150px;
+    margin:0;
+}
+
+.items__li--div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 160px;
+    margin: 5px;
+    background: var(--background-card);
+}
+
+.items__li--h2{
+    font-weight: var(--font-weight-medium);
+    font-size: 15px;
+    position: relative;
+}
+
+
+.items__li--h2::before,
+.items__li--h2::after {
+
+    /* colores de ropa.. puntitos */
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: var(--text-color-primary);
+    position: absolute;
+    border-radius: 50%;
+    top: 115%;
+    left: 0;
+}
+
+.items__li--h2::after {
+    background-color: var(--background-header);
+    left: 20px;
+}  
+
+.items__li--h3{
+    font-weight: var(--font-weight-bold);
+    font-size: 15px;
+    align-self: flex-end;
+    margin-top: 15px;
+}
+/* contacto */
+.items__contact {
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.items__h3 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#subscription_form {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  input[type="email"] {
+    padding: 10px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: hsl(211, 87%, 65%); /* Color de fondo */
+    color: hsl(0, 0%, 3%); /* Color del texto */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: hsl(211, 100%, 35%); /* Cambio de color al pasar el mouse */
+  }
